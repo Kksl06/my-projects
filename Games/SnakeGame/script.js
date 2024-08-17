@@ -28,14 +28,14 @@ function changeDirection(event) {
 }
 
 function drawSnake() {
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "purple";
     snake.forEach((segment) => {
         ctx.fillRect(segment.x, segment.y, gridSize, gridSize);
     });
 }
 
 function drawFood() {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "blue";
     ctx.fillRect(food.x, food.y, gridSize, gridSize);
 }
 
